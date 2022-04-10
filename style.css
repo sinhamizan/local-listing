@@ -1,0 +1,145 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'muli';
+}
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #272b41;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+
+/* Muli Font */
+@font-face {
+  font-family: muli;
+  src: url(assets/fonts/Muli-Light.ttf);
+  font-weight: 300;
+}
+@font-face {
+  font-family: muli;
+  src: url(assets/fonts/Muli.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: muli;
+  src: url(assets/fonts/Muli-SemiBold.ttf);
+  font-weight: 600;
+}
+@font-face {
+  font-family: muli;
+  src: url(assets/fonts/Muli-Bold.ttf);
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 600;
+  color: #272b41;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #ddd;
+  padding: 8px 20px 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+
+
+
+
+/* Register and Login css */
+.register-form {
+  width: 450px;
+  margin: 0 auto;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 50%);
+  margin-top: 100px;
+  border-radius: 5px;
+}
+.form-header h5 {
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+  padding: 30px 30px 25px;
+  margin-bottom: 25px;
+}
+.form-body {
+  padding: 0 30px;
+}
+.form-body input {
+  width: 92%;
+  padding: 10px 15px 12px;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  outline: none;
+  font-family: 'muli';
+  font-size: 16px;
+}
+.form-body input[type="submit"] {
+  width: 100%;
+  background: linear-gradient(to right,#f5548e,#fa8b0c);
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.form-body #keep_signed_in {
+  width: unset;
+  margin-right: 5px;
+  margin-bottom: 30px;
+}
+.form-body input[type="submit"]:hover {
+  background: linear-gradient(to right,#fa8b0c,#f5548e);
+}
+.form-excerpts {
+  padding: 10px 30px 30px;
+}
+.form-excerpts .account_exist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.form-excerpts .account_exist li a {
+  color: #f5548e;
+  transition: all 0.3s;
+}
+.form-excerpts .account_exist li a:hover {
+  color: #272b41;
+}
+.form-excerpts p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.form-excerpts .social_login {
+  text-align: center;
+}
+.form-excerpts .social_login li {
+  display: inline;
+}
+.form-excerpts .social_login li a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.form-excerpts .social_login li .facebook {
+  color: #903af9;
+}
+.form-excerpts .social_login li .google-plus {
+  color: #fd4868;
+}
+.form-excerpts .social_login li .facebook:hover {
+  background-color: #903af9;
+  color: #fff;
+}
+.form-excerpts .social_login li .google-plus:hover {
+  color: #fff;
+  background-color: #fd4868;
+}

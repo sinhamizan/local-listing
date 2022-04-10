@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+
+</head>
+<body>
+
+  <section class="register-area">
+    <div class="register-form">
+      <div class="form-header">
+        <h5><i class="fa-solid fa-user"></i> Sign In</h5>
+      </div>
+
+      <div class="form-body">
+        <form action="" id="register_form">
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Password" required>
+          <label for="keep_signed_in">
+            <input type="checkbox" name="keep_signed_in" value="1" id="keep_signed_in" required>
+            Keep me signed in
+          </label>
+          <input type="submit" value="Sign In">
+        </form>
+      </div>
+
+      <div class="form-excerpts">
+        <ul class="account_exist">
+          <li>Not a member? <a href="">Sign Up</a></li>
+          <li><a href="">Recover Password</a></li>
+        </ul>
+        <p>Or Signin with</p>
+        <ul class="social_login">
+          <li><a class="btn facebook" href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
+          <li><a class="btn google-plus" href=""><i class="fab fa-google-plus-g"></i> Google</a></li>
+        </ul>
+      </div>  
+    </div>
+  </section>
+  
+</body>
+</html>
