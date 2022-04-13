@@ -22,10 +22,27 @@
 
       <div class="form-body">
         <form action="" id="register_form">
-          <input type="phone" placeholder="Mobile No." required>
-          <input type="password" placeholder="Password" required>
+          <input type="text" name="fullname" placeholder="Full Name">
+          <div class="phone-no">
+            <select name="country-code" id="">
+              <option value="+880">+880</option>
+              <option value="+880">+880</option>
+              <option value="+880">+880</option>
+            </select>
+            <input type="phone" name="phone" placeholder="Mobile No." required>
+          </div>
+          <input type="password" name="passw" placeholder="Password" required>
+          <input type="password" name="confirm-pass" placeholder="Confirm Password" required>
+          <div class="otp-test">
+            <div class="otp-inner">
+              <input type="text" name="otp-code" placeholder="Enter Code">
+              <button class="otp-cancel">Cancel</button>
+            </div>
+            <button class="btn">Resend Code</button>
+          </div>
           <input type="submit" value="Sign Up">
         </form>
+        
       </div>
 
       <div class="form-excerpts">
@@ -33,11 +50,11 @@
           <li>Already a member? <a href="login.html">Sign In</a></li>
           <li><a href="recover-password.html">Recover Password</a></li>
         </ul>
-        <p>Or Signup with</p>
+        <!-- <p>Or Signup with</p>
         <ul class="social_login">
           <li><a class="btn facebook" href=""><i class="fab fa-facebook-f"></i> Facebook</a></li>
           <li><a class="btn google-plus" href=""><i class="fab fa-google-plus-g"></i> Google</a></li>
-        </ul>
+        </ul> -->
       </div>  
     </div>
   </section>
