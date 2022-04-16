@@ -23,7 +23,7 @@
         <ul class="sidebar-menu">
           <li><a href="dashboard.html"><i class="nav-icon fas fa-th"></i> dashboard</a></li>
 
-          <li><a href="new-category.html"><i class="fa-solid fa-utensils"></i> Restaurants</a> <span><i class="fas fa-angle-left right"></i></span>
+          <li><a href="manage-category.html"><i class="fa-solid fa-utensils"></i> Restaurants</a> <span><i class="fas fa-angle-left right"></i></span>
             <ul class="inner-nav">
               <li><a href="manage-category.html"><i class="far fa-circle nav-icon"></i>Manage Category</a></li>
               <li><a href="new-menu.html"><i class="far fa-circle nav-icon"></i>Manage Menu</a></li>
@@ -31,7 +31,6 @@
             </ul>
           </li>
           <!-- Restaurant Options -->
-
           
         </ul>
       </div>
@@ -39,7 +38,7 @@
       <div class="admin-content">
         <div class="ad-content-header">
           <ul>
-            <li><img src="assets/imgs/admin.png" alt=""> Admin <i class="fas fa-angle-down right"></i>
+            <li>Admin <i class="fas fa-angle-down right"></i>
               <ul>
                 <li><a href="">profile</a></li>
                 <li><a href="">profile</a></li>
@@ -51,20 +50,30 @@
           </ul>
         </div>
 
-        
+        <div class="admin-cont-inner">
+          <div class="new-category">
+            <h2>Add New Category</h2>
+            <div class="category-form">
+              <form action="">
+                <div class="input-group">
+                  <label for="">Category Name</label>
+                  <input type="text" name="cate-name" placeholder="New Category" required>
+                </div>
+                
+                <div class="input-group">
+                  <label for="">Choose Category Picture</label>
+                  <input type="file" name="cate-img" required>
+                </div>
+                
+                <input class="submit-btn" type="submit" name="submit-cat" value="Add">
+              </form>
+            </div>
+          </div>
+        </div>
         
       </div>
     </div>
   </section>
   
-
-
-  <!-- jquery file -->
-  <script src="assets/js/jquery-3.6.0.min.js"></script>
-  <!-- owl carousel js -->
-  <script src="assets/js/owl.carousel.min.js"></script>
-
-  <!-- custom js file -->
-  <script src="assets/js/main.js"></script>
 </body>
 </html>

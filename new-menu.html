@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Form</title>
+
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome CSS -->
+  <link rel="stylesheet" href="assets/css/all.css">
+
+</head>
+<body>
+
+  <section class="admin-area">
+    <div class="admin-inner">
+      <div class="admin-sidebar">
+        <div class="sidebar-header">
+          <p><a href="">View Site</a></p>
+        </div>
+        <ul class="sidebar-menu">
+          <li><a href="dashboard.html"><i class="nav-icon fas fa-th"></i> dashboard</a></li>
+
+          <li><a href="new-category.html"><i class="fa-solid fa-utensils"></i> Restaurants</a> <span><i class="fas fa-angle-left right"></i></span>
+            <ul class="inner-nav">
+              <li><a href="manage-category.html"><i class="far fa-circle nav-icon"></i>Manage Category</a></li>
+              <li><a href="new-menu.html"><i class="far fa-circle nav-icon"></i>Manage Menu</a></li>
+              <li><a href="manage-menu-item.html"><i class="far fa-circle nav-icon"></i>Manage Review</a></li>
+            </ul>
+          </li>
+          <!-- Restaurant Options -->
+
+          
+        </ul>
+      </div>
+
+      <div class="admin-content">
+        <div class="ad-content-header">
+          <ul>
+            <li>Admin <i class="fas fa-angle-down right"></i>
+              <ul>
+                <li><a href="">profile</a></li>
+                <li><a href="">profile</a></li>
+                <li><a href="">profile</a></li>
+                <li><a href="">profile</a></li>
+                <li><a href="">profile</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="admin-cont-inner">
+          <div class="new-menu">
+            <h2>Add New Menu Item</h2>
+            <div class="new-menu-form">
+              <form action="">
+                <div class="input-group">
+                  <label for="">Select Menu Type</label>
+                  <select name="menu-type" class="w-100 form-input">
+                    <option value="">--Select Menu Type--</option>
+                    <option value="">Breadfast</option>
+                    <option value="">Lunch</option>
+                    <option value="">Dinner</option>
+                    <option value="">Snack</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="">Menu Name</label>
+                  <input type="text" name="menu-name" placeholder="Ex: Porota" required>
+                </div>
+                <div class="input-group">
+                  <label for="">Menu Price</label>
+                  <div class="col-2">
+                    <input type="number" name="price" placeholder="Regular Price" required>
+                    <input type="number" name="offer-price" placeholder="Offer Price">
+                  </div>
+                </div>
+                <div class="input-group">
+                  <label for="">Munu Picture</label>
+                  <input type="file" name="menu-img">
+                </div>
+                <div class="input-group">
+                  <label for="">Menu Description</label>
+                  <textarea class="form-input" name="menu-brief" placeholder="Menu Short Description"></textarea>
+                </div>
+
+                <input class="submit-btn" type="submit" name="save-menu" value="Save">
+                <input class="submit-btn" type="submit" name="save-new-menu" value="Save & Add New">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+</body>
+</html>
