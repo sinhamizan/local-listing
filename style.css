@@ -525,7 +525,7 @@ header.header {
 }
 .search-form {
   background: #fff;
-  padding: 25px 20px 10px;
+  padding: 25px 20px 25px;
   border-radius: 4px;
   width: 80%;
   margin: 0 auto;
@@ -793,4 +793,17 @@ ul.accordion-list {
   line-height: 150%;
   margin: 0 0 15px 0;
   font-size: 14px;
+}
+.hero-area {
+  text-align: center;
+  padding: 80px 0;
+}
+.hero-area h1 {
+  font-size: 36px;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.hero-area p {
+  font-size: 18px;
+  color: #fff;
 }

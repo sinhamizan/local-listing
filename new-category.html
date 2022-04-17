@@ -59,13 +59,26 @@
                   <label for="">Category Name</label>
                   <input type="text" name="cate-name" placeholder="New Category" required>
                 </div>
-                
                 <div class="input-group">
-                  <label for="">Choose Category Picture</label>
-                  <input type="file" name="cate-img" required>
+                  <label for="">Category slug</label>
+                  <input type="text" name="cate-slug" placeholder="category-slug" required>
+                </div>
+                <div class="input-group">
+                  <label for="">Parent Category</label>
+                  <select name="parent-cat" class="form-input">
+                    <option value="">Maxican</option>
+                    <option value="">Maxican</option>
+                    <option value="">Maxican</option>
+                    <option value="">Maxican</option>
+                  </select>
+                </div>
+                <div class="input-group">
+                  <label for="">Description</label>
+                  <textarea name="description" class="form-input" placeholder="Description"></textarea>
                 </div>
                 
-                <input class="submit-btn" type="submit" name="submit-cat" value="Add">
+                <input class="submit-btn" type="submit" name="save" value="Save">
+                <input class="submit-btn" type="submit" name="save-new" value="Save & New">
               </form>
             </div>
           </div>
