@@ -49,7 +49,7 @@ a {
   text-align: center;
   background-color: transparent;
   border: 1px solid #ddd;
-  padding: 8px 20px 10px;
+  padding: 10px 20px;
   font-size: 16px;
   border-radius: 4px;
   cursor: pointer;
@@ -79,6 +79,11 @@ a {
 }
 .container {
   max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.container-md {
+  max-width: 920px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -530,8 +535,8 @@ header.header {
   width: 80%;
   margin: 0 auto;
 }
-.search-form input[type=text] {
-  width: 60%;
+.search-form input {
+  width: 43%;
 }
 .search-form select {
   width: 20%;
@@ -806,4 +811,43 @@ ul.accordion-list {
 .hero-area p {
   font-size: 18px;
   color: #fff;
+}
+.business-info {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.business-info h2 {
+  font-size: 20px;
+  padding: 25px;
+  border-bottom: 1px solid #efefef;
+}
+.info-field {
+  padding: 25px;
+}
+.business-info .phone-no {
+  grid-template-columns: 90px auto;
+  margin-bottom: 15px;
+}
+.business-info .otp-inner input {
+  width: 100%;
+}
+.business-info .otp-test {
+  text-align: left;
+}
+.business-info .otp-test .btn {
+  padding: 12px 24px 10px;
+  margin: 8px 0px 0;
+}
+.col-3-social {
+  display: grid;
+  grid-template-columns: 2fr 4fr 0.5fr;
+  grid-gap: 15px;
+}
+button.btn.add-social {
+  width: 110px;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 500;
 }

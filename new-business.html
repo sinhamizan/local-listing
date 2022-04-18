@@ -52,8 +52,147 @@
   </section>
 
   <section class="new-business">
-    <div class="contaner">
-      
+    <div class="container-md">
+      <div class="business">
+        <form action="">
+          <div class="business-info">
+            <h2>Business information</h2>
+            <div class="info-field">
+              <div class="input-group">
+                <label for="">business name</label>
+                <input class="form-input" type="text" name="business-name" placeholder="Business Name">
+              </div>
+              <div class="input-group">
+                <label for="">business tagline</label>
+                <input class="form-input" type="text" name="tagline" placeholder="Business Tagline">
+              </div>
+              <div class="input-group">
+                <label for="">Description</label>
+                <textarea name="description" class="form-input" placeholder="desctiption"></textarea>
+              </div>
+              <div class="input-group">
+                <label for="">category</label>
+                <select name="category" class="form-input">
+                  <option value="">-- Select Category --</option>
+                  <option value="">Restaurant</option>
+                  <option value="">Restaurant > Maxican</option>
+                  <option value="">Restaurant > Indian</option>
+                  <option value="">Restaurant > Chanies</option>
+                  <option value="">Restaurant > Bangla</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="">location</label>
+                <select name="category" class="form-input">
+                  <option value="">-- Select Location --</option>
+                  <option value="">Dhaka</option>
+                  <option value="">Dhaka > Mirpur1</option>
+                  <option value="">Dhaka > Pollobi</option>
+                  <option value="">Dhaka > Mirpur > Sony Square</option>
+                </select>
+              </div>
+              <div class="input-group">
+                <label for="">Address</label>
+                <input class="form-input" type="text" name="address" placeholder="Ex: House 12, Road 5, Jonota Houding">
+              </div>
+              <button class="btn">Locate Me</button>
+            </div>
+          </div>
+  
+          <div class="business-info">
+            <h2>Contact information</h2>
+            <div class="info-field">
+              <div class="input-group">
+                <label for="">Full Name</label>
+                <input class="form-input" type="text" name="fullname" placeholder="Full Name">
+              </div>
+              <div class="input-group">
+                <label for="">Phone Number</label>
+                <div class="phone-no">
+                  <select name="country-code">
+                    <option value="+880">+880</option>
+                    <option value="+880">+880</option>
+                    <option value="+880">+880</option>
+                  </select>
+                  <input type="phone" class="form-input" name="phone" placeholder="Mobile No." required>
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="">Password</label>
+                <div class="col-2">
+                  <input class="form-input" type="password" name="password" placeholder="Password">
+                  <input class="form-input" type="password" name="oonf-pass" placeholder="Confirm Password">
+                </div>
+              </div>
+              <div class="input-group">
+                <label for="">OTP</label>
+                <div class="otp-test">
+                  <div class="otp-inner">
+                    <input class="form-input" type="text" name="otp-code" placeholder="Enter Code">
+                    <button class="otp-cancel">Cancel</button>
+                  </div>
+                  <button class="btn">Resend Code</button>
+                </div>
+              </div>
+  
+              <div class="input-group">
+                <label for="">website</label>
+                <input type="text" name="website" placeholder="Webiste URL" class="form-input">
+              </div>
+              <div class="input-group">
+                <label for="">Social Fields</label>
+                <div class="col-3-social">
+                  <select name="social-field" class="form-input">
+                    <option value="">--Choose--</option>
+                    <option value="">facebook</option>
+                    <option value="">facebook</option>
+                    <option value="">facebook</option>
+                    <option value="">facebook</option>
+                    <option value="">facebook</option>
+                    <option value="">facebook</option>
+                  </select>
+                  <input type="text" name="social-url" placeholder="URL" class="form-input">
+                  <button class="btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <button class="btn add-social">add new</button>
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="business-info">
+            <h2>Business Hour information</h2>
+            <div class="info-field">
+              <div class="">
+                <input type="checkbox" name="always-open" id="always_open">
+                <label for="always_open">Is this listing open 24 hours 7 days a week?</label>
+              </div>
+              <div class="input-group">
+                <label for="">Business hours</label>
+                <div class="col-4-social">
+                  <select name="social-field" class="form-input">
+                    <option value="">--Choose day--</option>
+                    <option value="">Saturday</option>
+                    <option value="">sunday</option>
+                    <option value="">monday</option>
+                    <option value="">tuesday</option>
+                    <option value="">webnesday</option>
+                    <option value="">thusday</option>
+                    <option value="">friday</option>
+                  </select>
+                  <input type="time" name="start-time" class="form-input">
+                  <input type="time" name="end-time" class="form-input">
+                  <button class="btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <button class="btn add-social">add new</button>
+              </div>
+              
+            </div>
+          </div>
+
+
+        </form>
+      </div>
     </div>
   </section>
 
