@@ -343,7 +343,7 @@ ul.inner-nav li a {
   height: 8px;
   background: #f5548e;
   left: 4px;
-  top: 9px;
+  top: 4px;
   border-radius: 11px;
 }
 .ad-content-header {
@@ -651,7 +651,7 @@ ul.meta-listing {
 ul.meta-listing li {
   display: inline-block;
   margin-right: 5px;
-  padding: 4px 12px 7px;
+  padding: 8px 12px;
   border-radius: 4px;
   text-transform: capitalize;
   color: #fff;
@@ -718,87 +718,34 @@ ul.bfi-view li a.active {
 
 
 /* accordion */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  font-family: "Museo Sans", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-ul.accordion-list {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 20px;
-  margin: 0;
-  list-style: none;
-  background-color: #f9f9fa;
-}
-.accordion-list li {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  background-color: #fff;
-  padding: 20px;
-  margin: 0 auto 15px auto;
-  border: 1px solid #eee;
-  border-radius: 5px;
+.accordion {
+  background-color: #eee;
+  color: #444;
   cursor: pointer;
-}
-
-.accordion-list .active h3:after {
-  transform: rotate(45deg);
-}
-  
-.accordion-list  h3 {
-  font-weight: 700;
-  position: relative;
-  display: block;
+  padding: 18px;
   width: 100%;
-  height: auto;
-  padding: 0 0 0 0;
-  margin: 0;
+  border: none;
+  text-align: left;
+  outline: none;
   font-size: 15px;
-  letter-spacing: 0.01em;
-  cursor: pointer;
+  transition: 0.4s;
 }
-.accordion-list  h3::after {
-  content: "\f278";
-  font-family: "material-design-iconic-font";
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #fcc110;
-  transition: all 0.3s ease-in-out;
-  font-size: 18px;
+
+.accordion .active, .accordion:hover {
+  background-color: #ccc; 
 }
-.accordion-list .answer {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: auto;
-  margin: 0;
-  padding: 0;
-  cursor: pointer;
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
 }
-.accordion-list p {
-  position: relative;
-  display: block;
-  font-weight: 300;
-  padding: 10px 0 0 0;
-  cursor: pointer;
-  line-height: 150%;
-  margin: 0 0 15px 0;
-  font-size: 14px;
+.load-more {
+  margin: 25px 0;
 }
+
+
 .hero-area {
   text-align: center;
   padding: 80px 0;

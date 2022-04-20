@@ -6,12 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register Form</title>
 
-  <!-- Main Style CSS -->
-  <link rel="stylesheet" href="style.css">
   <!-- Font Awesome CSS -->
   <link rel="stylesheet" href="assets/css/all.css">
   <!-- owl carousel css -->
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <!-- Select 2 css -->
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+  <!-- Main Style CSS -->
+  <link rel="stylesheet" href="style.css">
+
 
 </head>
 <body>
@@ -72,7 +76,7 @@
               </div>
               <div class="input-group">
                 <label for="">category</label>
-                <select name="category" class="form-input">
+                <select name="category" class="form-input business-category">
                   <option value="">-- Select Category --</option>
                   <option value="">Restaurant</option>
                   <option value="">Restaurant > Maxican</option>
@@ -83,7 +87,7 @@
               </div>
               <div class="input-group">
                 <label for="">location</label>
-                <select name="category" class="form-input">
+                <select name="location" class="form-input business-location">
                   <option value="">-- Select Location --</option>
                   <option value="">Dhaka</option>
                   <option value="">Dhaka > Mirpur1</option>
@@ -96,6 +100,50 @@
                 <input class="form-input" type="text" name="address" placeholder="Ex: House 12, Road 5, Jonota Houding">
               </div>
               <button class="btn">Locate Me</button>
+
+              <div class="input-group">
+                <label for="">website</label>
+                <input type="text" name="website" placeholder="Webiste URL" class="form-input">
+              </div>
+              <div class="input-group">
+                <label for="">website logo</label>
+                <input type="file" name="site-logo" class="form-input">
+              </div>
+              <div class="input-group">
+                <label for="">website Banner</label>
+                <input type="file" name="site-banner" class="form-input">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="business-info">
+            <h2>Business Hour information</h2>
+            <div class="info-field">
+              <div class="">
+                <input type="checkbox" name="always-open" id="always_open">
+                <label for="always_open">Is this listing open 24 hours 7 days a week?</label>
+              </div>
+              <div class="input-group">
+                <label for="">Business hours</label>
+                <div class="col-4-social">
+                  <select name="social-field" class="form-input">
+                    <option value="">--Choose day--</option>
+                    <option value="">Saturday</option>
+                    <option value="">sunday</option>
+                    <option value="">monday</option>
+                    <option value="">tuesday</option>
+                    <option value="">webnesday</option>
+                    <option value="">thusday</option>
+                    <option value="">friday</option>
+                  </select>
+                  <input type="time" name="start-time" class="form-input">
+                  <input type="time" name="end-time" class="form-input">
+                  <button class="btn"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+                <button class="btn add-social">add new</button>
+              </div>
+              
             </div>
           </div>
   
@@ -134,59 +182,6 @@
                   <button class="btn">Resend Code</button>
                 </div>
               </div>
-  
-              <div class="input-group">
-                <label for="">website</label>
-                <input type="text" name="website" placeholder="Webiste URL" class="form-input">
-              </div>
-              <div class="input-group">
-                <label for="">Social Fields</label>
-                <div class="col-3-social">
-                  <select name="social-field" class="form-input">
-                    <option value="">--Choose--</option>
-                    <option value="">facebook</option>
-                    <option value="">facebook</option>
-                    <option value="">facebook</option>
-                    <option value="">facebook</option>
-                    <option value="">facebook</option>
-                    <option value="">facebook</option>
-                  </select>
-                  <input type="text" name="social-url" placeholder="URL" class="form-input">
-                  <button class="btn"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <button class="btn add-social">add new</button>
-              </div>
-              
-            </div>
-          </div>
-
-          <div class="business-info">
-            <h2>Business Hour information</h2>
-            <div class="info-field">
-              <div class="">
-                <input type="checkbox" name="always-open" id="always_open">
-                <label for="always_open">Is this listing open 24 hours 7 days a week?</label>
-              </div>
-              <div class="input-group">
-                <label for="">Business hours</label>
-                <div class="col-4-social">
-                  <select name="social-field" class="form-input">
-                    <option value="">--Choose day--</option>
-                    <option value="">Saturday</option>
-                    <option value="">sunday</option>
-                    <option value="">monday</option>
-                    <option value="">tuesday</option>
-                    <option value="">webnesday</option>
-                    <option value="">thusday</option>
-                    <option value="">friday</option>
-                  </select>
-                  <input type="time" name="start-time" class="form-input">
-                  <input type="time" name="end-time" class="form-input">
-                  <button class="btn"><i class="fa-solid fa-xmark"></i></button>
-                </div>
-                <button class="btn add-social">add new</button>
-              </div>
-              
             </div>
           </div>
 
@@ -200,6 +195,9 @@
   <script src="assets/js/jquery-3.6.0.min.js"></script>
   <!-- owl carousel js -->
   <script src="assets/js/owl.carousel.min.js"></script>
+
+  <!-- Select 2 -->
+  <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
   <!-- custom js file -->
   <script src="assets/js/main.js"></script>

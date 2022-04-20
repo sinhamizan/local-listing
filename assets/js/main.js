@@ -31,19 +31,25 @@ jQuery('.category-slider').owlCarousel({
     
 // }
 
-
-jQuery(document).ready(function(){
-    jQuery('.accordion-list > li > .answer').hide();
-      
-    jQuery('.accordion-list > li').click(function() {
-      if (jQuery(this).hasClass("active")) {
-        jQuery(this).removeClass("active").find(".answer").slideUp();
-      } else {
-        jQuery(".accordion-list > li.active .answer").slideUp();
-        jQuery(".accordion-list > li.active").removeClass("active");
-        jQuery(this).addClass("active").find(".answer").slideDown();
-      }
-      return false;
-    });
-    
+// Accordion
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
   });
+}
+
+// Select2
+$(document).ready(function() {
+  $('.business-location').select2();
+});
+$(document).ready(function() {
+  $('.business-category').select2();
+});
