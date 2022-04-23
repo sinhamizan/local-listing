@@ -15,6 +15,23 @@ jQuery('.category-slider').owlCarousel({
     }
 })
 
+jQuery('.popular-slider').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+
 // function open_menu(val) {
 //     if( val == "category" ) {
 //         jQuery("ul.inner-nav.category").toggle();
@@ -52,4 +69,22 @@ $(document).ready(function() {
 });
 $(document).ready(function() {
   $('.business-category').select2();
+});
+
+
+// faq accordion
+$(document).ready(function(){
+  $('.accordion-list > li > .answer').hide();
+    
+  $('.accordion-list > li').click(function() {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active").find(".answer").slideUp();
+    } else {
+      $(".accordion-list > li.active .answer").slideUp();
+      $(".accordion-list > li.active").removeClass("active");
+      $(this).addClass("active").find(".answer").slideDown();
+    }
+    return false;
+  });
+  
 });
